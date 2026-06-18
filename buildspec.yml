@@ -1,13 +1,13 @@
 version: 0.2
 phases:
-  install:
   runtime-versions:
     java: corretto17
 
 build:
   commands:
-    - mvn clean package
+    - echo build started
+    - mvn clean install
 
 artifacts:
   files:
-    - target/*
+    - target./*jar
